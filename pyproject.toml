@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-quantum"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "qiskit==2.5.0",
+    "qiskit-ibm-runtime",
+]
+
+[project.scripts]
+hello-quantum = "hello_quantum:main"
